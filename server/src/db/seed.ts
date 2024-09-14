@@ -9,8 +9,8 @@ async function seed() {
 		.insert(goals)
 		.values([
 			{ title: "Finalizar NLW", desiredWeeklyFrequency: 1 },
-			{ title: "Criar um portfólio", desiredWeeklyFrequency: 2 },
-			{ title: "Acordar cedo", desiredWeeklyFrequency: 3 },
+			{ title: "Criar um portfólio", desiredWeeklyFrequency: 1 },
+			{ title: "Acordar cedo", desiredWeeklyFrequency: 7 }
 		])
 		.returning()
 
