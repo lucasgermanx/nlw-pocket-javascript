@@ -12,13 +12,11 @@ export function App() {
 		queryFn: getSummary,
 		staleTime: 1 * 60 * 1000,
 	})
+	console.log(data)
 
 	return (
 		<Dialog>
-			{data?.total && data.total > 0 ? <Summary /> : <EmptyGoals />}
-
-			{/* <EmptyGoals /> */}
-			{/* <Summary /> */}
+			{data && data.total > 0 ? <Summary /> : <EmptyGoals />}
 			<CreateGoal />
 		</Dialog>
 	)
